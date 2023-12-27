@@ -5,10 +5,10 @@ from matplotlib import pyplot as plt
 
 pytrend = TrendReq()
 query = ['dolar']
-pytrend.build_payload(query, cat=0, timeframe="today 12-m", geo='AR')
+pytrend.build_payload(query, cat=0, timeframe='today 5-y', geo='AR')
 datos = pytrend.interest_over_time()
 
-print(datos)
+print(datos['dolar'])
 
-plt.plot(datos)
+plt.plot(datos['dolar'])
 plt.show()
