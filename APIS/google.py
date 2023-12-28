@@ -1,4 +1,3 @@
-import pandas as pd
 from pytrends.request import TrendReq
 
 def get_datatrends():

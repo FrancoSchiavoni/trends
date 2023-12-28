@@ -1,10 +1,10 @@
 import APIS.dolar as dolar
-import APIS.trends as trends
+import APIS.google as google
 from matplotlib import pyplot as plt
 import pandas as pd
 
 df_blue = dolar.get_dataframedolar()
-df_trends = trends.get_datatrends()
+df_trends = google.get_datatrends()
 
 
 # ambas columnas 'date' sean del tipo datetime64[ns]
